@@ -1,0 +1,39 @@
+/* Header container */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+  }
+  
+  /* Logo */
+  .header-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  /* Navigation menu */
+  .header-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header-nav ul li {
+    display: inline;
+  }
+  
+  .header-nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+  }
+  
+  .header-nav ul li a:hover {
+    text-decoration: underline;
+  }
+  

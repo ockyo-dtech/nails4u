@@ -6,16 +6,16 @@ const About = () => {
     <div className="about-container">
       <h1>About Us</h1>
       <p>
-        Welcome to MyReactApp! Our mission is to create awesome web applications using the latest technologies.
+        Welcome to Nails For You!
       </p>
       <p>
-        This app is built with React, a powerful library for building user interfaces. Our team is passionate about delivering high-quality products that make a difference.
+        At Nails For You Milton, we believe in the transformative power of beautiful nails. Our team of skilled technicians is dedicated to providing top-notch nail care services in a relaxing and welcoming environment. With a passion for creativity and attention to detail, we aim to enhance your natural beauty through stunning nail designs.
       </p>
       <h2>Our Team</h2>
       <ul>
-        <li>Jane Doe - Frontend Developer</li>
-        <li>John Smith - Backend Developer</li>
-        <li>Alice Johnson - UX/UI Designer</li>
+        <li>Nguyen Van A- Frontend Developer</li>
+        <li>Nguyen Van B - Backend Developer</li>
+        <li>Nguyen Van C - UX/UI Designer</li>
       </ul>
     </div>
   );

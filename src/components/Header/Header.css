@@ -1,39 +1,84 @@
 /* Header container */
 .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  position: relative;
+  z-index: 10;
+}
+
+/* Logo */
+.header-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Navigation menu (hiển thị mặc định trên desktop) */
+.header-nav {
+  display: flex;
+}
+
+.header-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.header-nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.header-nav ul li a:hover {
+  text-decoration: underline;
+  color: #ffcc00;
+}
+
+/* Hamburger menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  border-radius: 2px;
+  transition: transform 0.3s;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  /* Show hamburger menu */
+  .hamburger {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+  }
+
+  /* Hidden navigation menu on mobile by default */
+  .header-nav {
+    display: none;
+    flex-direction: column;
     background-color: #007bff;
-    color: white;
-    padding: 10px 20px;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 200px;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   }
-  
-  /* Logo */
-  .header-logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
-  
-  /* Navigation menu */
-  .header-nav ul {
-    list-style: none;
+
+  .header-nav.active {
     display: flex;
-    gap: 15px;
-    margin: 0;
-    padding: 0;
   }
-  
-  .header-nav ul li {
-    display: inline;
-  }
-  
-  .header-nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: 1rem;
-  }
-  
-  .header-nav ul li a:hover {
-    text-decoration: underline;
-  }
-  
+}

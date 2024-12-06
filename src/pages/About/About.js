@@ -17,6 +17,8 @@ const About = () => {
         <li>Nguyen Van B - Backend Developer</li>
         <li>Nguyen Van C - UX/UI Designer</li>
       </ul>
+
+      
     </div>
   );
 };

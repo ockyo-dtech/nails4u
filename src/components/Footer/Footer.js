@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import logo from '../../assets/Nails4U-logo.png';
+import logo from '../../assets/nails-logo-white.png';
 
 const Footer5 = () => {
   return (

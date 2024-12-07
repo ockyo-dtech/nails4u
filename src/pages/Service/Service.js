@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState,  useEffect} from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
@@ -18,6 +18,22 @@ import slide_image_7 from '../../assets/images/img_7.jpg';
 
 
 function Service() {
+    const [isMobile, setIsMobile] = useState(false);
+
+    // Kiểm tra kích thước màn hình
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth <= 768); // Nếu màn hình <= 768px thì là thiết bị di động
+        };
+
+        handleResize(); // Gọi ngay khi component mount
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
     const [heading, setHeading] = useState('Flower Gallery');
 
     // Cập nhật tiêu đề khi slide thay đổi
@@ -84,25 +100,28 @@ function Service() {
                 onSlideChange={handleSlideChange}  // Đăng ký sự kiện khi slide thay đổi
             >
                 <SwiperSlide className="w-[36rem] h-[42rem] relative">
-                    <img src={slide_image_1} alt="slide_image" className="w-[37rem] h-[42rem] rounded-2xl object-cover" />
+                    <img src={slide_image_1} alt="slide_image" className="w-[37rem] h-[42rem] rounded-2xl object-cover sm:w-[28rem] " />
+                    
                 </SwiperSlide>
                 <SwiperSlide className="w-[36rem] h-[42rem] relative">
-                    <img src={slide_image_2} alt="slide_image" className="w-[37rem] h-[42rem] rounded-2xl object-cover" />
+                    <img src={slide_image_2} alt="slide_image" className="w-[37rem] h-[42rem] rounded-2xl object-cover sm:w-[28rem] " />
+                    
                 </SwiperSlide>
                 <SwiperSlide className="w-[36rem] h-[42rem] relative">
-                    <img src={slide_image_3} alt="slide_image" className="w-[37rem] h-[42rem] rounded-2xl object-cover" />
+                    <img src={slide_image_3} alt="slide_image" className="w-[37rem] h-[42rem] rounded-2xl object-cover sm:w-[28rem] " />
+
                 </SwiperSlide>
                 <SwiperSlide className="w-[36rem] h-[42rem] relative">
-                    <img src={slide_image_4} alt="slide_image" className="w-[37rem] h-[42rem] rounded-2xl object-cover" />
+                    <img src={slide_image_4} alt="slide_image" className="w-[37rem] h-[42rem] rounded-2xl object-cover sm:w-[28rem] " />
                 </SwiperSlide>
                 <SwiperSlide className="w-[36rem] h-[42rem] relative">
-                    <img src={slide_image_5} alt="slide_image" className="w-[37rem] h-[42rem] rounded-2xl object-cover" />
+                    <img src={slide_image_5} alt="slide_image" className="w-[37rem] h-[42rem] rounded-2xl object-cover sm:w-[28rem] " />
                 </SwiperSlide>
                 <SwiperSlide className="w-[36rem] h-[42rem] relative">
-                    <img src={slide_image_6} alt="slide_image" className="w-[37rem] h-[42rem] rounded-2xl object-cover" />
+                    <img src={slide_image_6} alt="slide_image" className="w-[37rem] h-[42rem] rounded-2xl object-cover sm:w-[28rem] " />
                 </SwiperSlide>
                 <SwiperSlide className="w-[37rem] h-[42rem] relative">
-                    <img src={slide_image_7} alt="slide_image" className="w-[37rem] h-[42rem] rounded-2xl object-cover" />
+                    <img src={slide_image_7} alt="slide_image" className="w-[37rem] h-[42rem] rounded-2xl object-cover sm:w-[28rem] " />
                 </SwiperSlide>
 
                 {/* <div className="absolute bottom-8 w-full flex justify-center items-center">

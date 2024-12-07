@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import logo from '../../assets/Nails4U-logo.png';
+import logo from '../../assets/nails-logo-white.png';
 
 const Footer5 = () => {
   return (
@@ -49,7 +49,7 @@ const Footer5 = () => {
         <div class="py-14 flex flex-col lg:flex-row justify-between gap-8 border-b border-gray-500">
           <div class="w-full max-lg:mx-auto flex flex-col sm:flex-row max-lg:items-center max-lg:justify-between gap-6 md:gap-12 lg:gap-24">
             <div class="">
-              <h6 class="text-lg font-medium text-white mb-7 max-lg:text-center">Pagedone</h6>
+              <h6 class="text-lg font-medium text-white mb-7 max-lg:text-center">Nails4U</h6>
               <ul class="flex flex-col max-lg:items-center gap-6">
                 <li><a href="javascript:;"
                   class="text-base font-normal max-lg:text-center text-gray-400 whitespace-nowrap transition-all duration-300 hover:text-amber-400 focus-within:outline-0 focus-within:text-amber-400">Home</a>

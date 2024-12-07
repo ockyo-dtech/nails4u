@@ -12,7 +12,8 @@ const Navbar3 = () => {
               <img src={logo} alt="Nails4u-logo" className="w-40" />
             </Link>
 
-            <div class="flex flex-col lg:flex-row items-center gap-6 lg:gap-12">
+            {/* <div class="flex flex-col lg:flex-row items-center gap-6 lg:gap-12" > */}
+            <div class="hidden lg:flex flex-col lg:flex-row items-center gap-6 lg:gap-12">
               <ul class="flex flex-col sm:flex-row items-center gap-5 sm:gap-12">
                 <li>
                   <Link

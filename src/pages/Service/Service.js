@@ -24,7 +24,7 @@ function Service() {
     useEffect(() => {
         const handleResize = () => {
             setIsMobile(window.innerWidth <= 768); // Nếu màn hình <= 768px thì là thiết bị di động
-        };
+        }
 
         handleResize(); // Gọi ngay khi component mount
         window.addEventListener('resize', handleResize);

@@ -1,5 +1,5 @@
 import React from 'react';
-import './About.css';
+
 
 const About = () => {
   return (
@@ -13,9 +13,9 @@ const About = () => {
       </p>
       <h2>Our Team</h2>
       <ul>
-        <li>Nguyen Van A- Frontend Developer</li>
-        <li>Nguyen Van B - Backend Developer</li>
-        <li>Nguyen Van C - UX/UI Designer</li>
+        <li>Nguyen Van A</li>
+        <li>Nguyen Van B</li>
+        <li>Nguyen Van C</li>
       </ul>
 
       

@@ -17,8 +17,13 @@ const About = () => {
         <li>Nguyen Van B</li>
         <li>Nguyen Van C</li>
       </ul>
+      WHY CHOOSE NAILS FOR YOU?
+      Experienced and friendly staff
+      Trend-setting nail artistry
+      Hygienic and clean salon environment
+      Personalized service tailored to your preferences
+      Join us at Nails For You Thompson - Milton, where every visit is an opportunity to indulge in self-care and leave with nails that make a statement.
 
-      
     </div>
   );
 };

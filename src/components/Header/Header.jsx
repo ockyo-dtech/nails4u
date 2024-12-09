@@ -1,18 +1,48 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from 'react-router-dom';
 import logo from '../../assets/Nails4U-logo.png';
-
-const Navbar3 = () => {
+const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
     <div>
       <section className="pt-12 pb-7 bg-white ">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-6 pb-10 border-b-2 border-gray-200">
+            {/*             
             <Link to="/" className="py-1.5">
               <img src={logo} alt="Nails4u-logo" className="w-40" />
-            </Link>
+            </Link> */}
+            {/* Logo và Hamburger Menu */}
+            <div className="flex flex-row items-center gap-56">
+              <Link to="/" className="py-1.5 ">
+                <img src={logo} alt="Nails4u-logo" className="w-40" />
+              </Link>
+              {/* Hamburger Menu */}
+              <div className="lg:hidden">
+                <button
+                  onClick={() => setIsMenuOpen(!isMenuOpen)}
+                  className="text-gray-800 focus:outline-none"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-8 w-8"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M4 6h16M4 12h16m-7 6h7"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
 
-            {/* <div class="flex flex-col lg:flex-row items-center gap-6 lg:gap-12" > */}
+
+
             <div class="hidden lg:flex flex-col lg:flex-row items-center gap-6 lg:gap-12">
               <ul class="flex flex-col sm:flex-row items-center gap-5 sm:gap-12">
                 <li>
@@ -78,4 +108,4 @@ const Navbar3 = () => {
   );
 };
 
-export default Navbar3;
+export default Header;
